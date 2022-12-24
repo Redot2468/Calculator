@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --color-bodyBgLight: #e6e6e6;
+  --color-bodyBgDark: #3b4664;
+  --color-lightFieldInput: #eeeeee;
+  --color-darkFieldInput: #181f32;
+  --color-calcKeysBgLight: #d3cdcd;
+  --color-calcKeysBgDark: #252d44;
+  --color-lightPrimaryBtn: #eeeeee;
+  --color-darkPrimaryBtn: #eae3db;
+  --color-secondaryBtnLight: #388187;
+  --color-secondaryBtnDark: #647299;
+  --color-accentBtnLight: #c85401;
+  --color-accentBtnDark: #d13f30;
+  --color-textLight: #3a3a32;
+  --color-textDark: #e6e6e6;
+  --color-btnNumberKeysDark: #414960;
+  --color-btnNumberKeysLight: #36362c;
+  --color-white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h1 {
+  color: var(--color-textDark);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* btn */
+/* dark theme */
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn__primary {
+  padding: 1rem 1.8rem;
+  font-size: 2.7rem;
+  font-weight: 700;
+  background: var(--color-darkPrimaryBtn);
+  box-shadow: 0 3px #dbc4ab;
+  color: var(--color-btnNumberKeysDark);
+}
+
+.btn__primary:hover {
+  background: #ffffff;
+}
+
+.btn__secondary {
+  padding: 1.5rem 2.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--color-secondaryBtnDark);
+  color: var(--color-textDark);
+  box-shadow: 0 3px #505e83;
+}
+
+.btn__secondary:hover {
+  background: #a2b3e1;
+}
+
+.btn__secondary2 {
+  padding: 1.5rem 1.8rem;
+  text-transform: uppercase;
+}
+
+.btn__accent {
+  padding: 1.5rem 3.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: var(--color-accentBtnDark);
+  color: var(--color-textDark);
+  box-shadow: 0 3px #aa1707;
+}
+
+.btn__accent:hover {
+  background: #f96c5a;
+}
+
+/* light theme */
+
+.light .btn__primary {
+  color: var(--color-btnNumberKeysLight);
+  background: var(--color-lightPrimaryBtn);
+  box-shadow: 0 3px #b9b9b9;
+}
+
+.light .btn__primary:hover {
+  background: #ffff;
+}
+
+.light .btn__secondary {
+  background: var(--color-secondaryBtnLight);
+  box-shadow: #113b3f;
+}
+
+.light .btn__secondary:hover {
+  background: #62b5bd;
+}
+.light .btn__accent {
+  background: var(--color-accentBtnLight);
+  box-shadow: 0 3px #813600;
+}
+
+.light .btn__accent:hover {
+  background: #ff8a3a;
+}
+
+/* buttons block(container) */
+main {
+  background: var(--color-calcKeysBgDark);
+}
+.btn__block {
+  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+  grid-template-areas:
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m m n n";
+}
+
+.btn__reset {
+  grid-area: m;
+}
+
+.btn__equal {
+  grid-area: n;
+}
+
+/* light theme */
+.light {
+  background: var(--color-calcKeysBgLight);
+}
+
+/* header */
