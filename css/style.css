@@ -37,9 +37,9 @@ body {
 }
 
 h1 {
-  color: var(--color-textDark);
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
+  margin: 1.8rem 0;
 }
 
 /* btn */
@@ -151,8 +151,28 @@ main {
 }
 
 /* light theme */
-.light {
+.light .btn__block {
   background: var(--color-calcKeysBgLight);
 }
 
-/* header */
+/* input field */
+.input__field {
+  border: 1px solid green;
+  height: 75px;
+  border-radius: 15px;
+  background: var(--color-darkFieldInput);
+}
+
+.inputs {
+  color: var(--color-textDark);
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.light .input__field {
+  background: var(--color-lightFieldInput);
+}
+
+.light .inputs {
+  color: var(--color-textLight);
+}
