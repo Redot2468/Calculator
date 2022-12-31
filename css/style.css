@@ -36,13 +36,30 @@ body {
   font-weight: 700;
 }
 
+main {
+  background: var(--color-bodyBgDark);
+  height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
 h1 {
   font-size: 3.2rem;
   font-weight: 700;
   margin: 1.8rem 0;
 }
 
-/* btn */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.light {
+  background: var(--color-bodyBgLight);
+}
+
+/*=============== btn============ */
 /* dark theme */
 .btn {
   border: none;
@@ -125,12 +142,12 @@ h1 {
   background: #ff8a3a;
 }
 
-/* buttons block(container) */
-main {
-  background: var(--color-calcKeysBgDark);
-}
+/* ====================buttons block(container) ======================*/
+
 .btn__block {
-  border: 2px solid blue;
+  background: var(--color-calcKeysBgDark);
+  margin-top: 2.5rem;
+  border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -139,6 +156,7 @@ main {
     "a b c d"
     "e f g h"
     "i j k l"
+    "0 p q r "
     "m m n n";
 }
 
@@ -155,12 +173,13 @@ main {
   background: var(--color-calcKeysBgLight);
 }
 
-/* input field */
+/* ===============input field============== */
 .input__field {
-  border: 1px solid green;
   height: 75px;
   border-radius: 15px;
   background: var(--color-darkFieldInput);
+  margin-top: 2rem;
+  padding-top: 0.5rem;
 }
 
 .inputs {
@@ -169,10 +188,58 @@ main {
   padding-right: 2rem;
 }
 
+/* light theme */
+
 .light .input__field {
   background: var(--color-lightFieldInput);
 }
 
 .light .inputs {
+  color: var(--color-textLight);
+}
+
+/* ===============navbar========= */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80%;
+}
+
+.logo p {
+  color: var(--color-white);
+  font-size: 3.2rem;
+}
+
+.theme__section {
+  width: 20%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.themes {
+  cursor: pointer;
+}
+.themes i {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.themes .fa-moon {
+  color: #252d44;
+  display: none;
+}
+
+/* light theme */
+
+.light .logo p {
+  color: var(--color-textLight);
+}
+
+.light .theme__section {
   color: var(--color-textLight);
 }

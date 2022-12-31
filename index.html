@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="A calculator challenge from frontend mentor "
+    />
+    <title>Calculator</title>
     <!-- google font service -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,8 +20,64 @@
     <!-- styles links -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- fontawesomw -->
+    <script
+      src="https://kit.fontawesome.com/bbec75341f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class=""></div>
+    <main class="main">
+      <div class="container">
+        <!-- ==========nav=========== -->
+        <div class="nav">
+          <section class="logo">
+            <p>calc</p>
+          </section>
+
+          <section class="theme__section">
+            <p class="themes">
+              Theme <i class="fa-solid fa-lightbulb"></i>
+              <i class="fa-solid fa-moon"></i>
+            </p>
+          </section>
+        </div>
+
+        <!-- =============input field========= -->
+
+        <header class="input__field">
+          <h1 class="inputs"></h1>
+        </header>
+
+        <!--=========== buttons block =========-->
+
+        <div class="btn__block">
+          <button class="btn btn__primary num">7</button>
+          <button class="btn btn__primary num">8</button>
+          <button class="btn btn__primary num">9</button>
+          <button class="btn btn__secondary btn__secondary2 delete__btn">
+            Del
+          </button>
+          <button class="btn btn__primary num">4</button>
+          <button class="btn btn__primary num">5</button>
+          <button class="btn btn__primary num">6</button>
+          <button class="btn btn__primary op">+</button>
+          <button class="btn btn__primary num">1</button>
+          <button class="btn btn__primary num">2</button>
+          <button class="btn btn__primary num">3</button>
+          <button class="btn btn__primary num">.</button>
+          <button class="btn btn__primary num">0</button>
+          <button class="btn btn__primary num">*</button>
+          <button class="btn btn__primary num">/</button>
+          <button class="btn btn__primary op">-</button>
+          <button class="btn btn__secondary btn__reset">Reset</button>
+          <button class="btn btn__accent btn__equal">=</button>
+        </div>
+      </div>
+    </main>
+
+    <!--  scripts-->
+    <script src="./js/main.js"></script>
   </body>
 </html>
