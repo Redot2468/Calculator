@@ -3,7 +3,7 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -127,7 +127,6 @@ h1 {
 
 .light .btn__secondary {
   background: var(--color-secondaryBtnLight);
-  box-shadow: #113b3f;
 }
 
 .light .btn__secondary:hover {
